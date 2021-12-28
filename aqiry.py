@@ -84,10 +84,7 @@ if __name__ == "__main__":
 
 
         elif 'play music' in query:
-            music_dir = 'D:\\songs\\Favorite Songs2'
-            songs = os.listdir(music_dir)
-            print(songs)    
-            os.startfile(os.path.join(music_dir, songs[0]))
+            webbrowser.open("https://open.spotify.com/")
 
         elif 'the time' in query:
             strTime = datetime.datetime.now().strftime("%H:%M:%S")    
